@@ -50,15 +50,15 @@ def full?(board)
 end
       
 def draw?(board)
-  if won?(board) == nil
-        if full?(board)
-            return true
-        else
-            return false
-        end
-    elsif won?(board) 
-        return false
+  if won?(board)
+    return false 
+  else
+    if full?(board)
+      return true
+    else
+      return false
     end
+  end
 end
   
 
